@@ -1,24 +1,24 @@
-<script lang="ts">
+<script >
+import { toast } from '$lib/utils.ts';
+import Toast from '$lib/Toast.svelte';
+import '../app.css';
 
-	// import { toast } from '$lib/toast.ts';
-	// import Toast from '$lib/Toast.svelte';
 
 
 	
 </script>
 
-<!-- {#if $toast}
+{#if $toast}
 	{#each $toast as t (t.id)}
 		<Toast {t} />
 	{/each}
-{/if} -->
+{/if}
 
-<div class="flex flex-col min-h-screen">
-
-	<main class="transition-outer md:max-w-screen-2xl max-w-sm mx-auto">
-				<div class="flex-grow">
+<div>
+	<main class="flex justify-center items-center">
+				
 					<slot />
-                </div>
+          
 	</main>
 
 </div>

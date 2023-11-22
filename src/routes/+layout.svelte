@@ -14,11 +14,7 @@ import '../app.css';
 	{/each}
 {/if}
 
-<div>
-	<main class="flex justify-center items-center">
-				
-					<slot />
-          
-	</main>
 
-</div>
+	<main class="flex justify-center items-center">
+					<slot />
+	</main>
